@@ -28,7 +28,7 @@ const getQtyStickers = (inputsStickers) => {
     let qty = 0;
 
     inputsStickers.forEach(input => {
-        qty += Number(input.value);
+        qty += input.valueAsNumber;
     });
 
     return qty;
