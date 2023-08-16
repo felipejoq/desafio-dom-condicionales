@@ -40,7 +40,7 @@ const getMessageStickers = (qty) => {
         return showMessage.innerText = `Ingrese solo números`;
     }
 
-    if (qty >= QUANTITY) {
+    if (qty > QUANTITY) {
         return `Superó la cantidad de Stickers (10). Lleva: ${qty}. Modique la cantidad.`
     } else {
         return `Llevas: ${qty} stickers en total`;
